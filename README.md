@@ -1,5 +1,5 @@
 # Website Responsivo de Natal
-## Veja em [página](https://ricardoharanop.github.io/site-de-Natal/)
+## Veja em [site-de-Natal](https://ricardoharanop.github.io/site-de-Natal/)
 ## Website desenvolvido com o intuito de aprender
 
 - Website responsivo de natal usando HTML CSS & JavaScript
