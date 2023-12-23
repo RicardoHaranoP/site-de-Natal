@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css">
+
+   <!--=============== SWEETALERT ===============-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.1/dist/sweetalert2.min.css">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
+
+   <title>Website de natal Responsivo</title>
+</head>
+
+<body>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="" class="nav__logo">
+            <span>Feliz</span>
+            <span>Natal</span>
+         </a>
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li class="nav__item">
+                  <a onclick=scrollToHome() class="nav__link active-link">
+                     <span>01</span> Home
+                  </a>
+               </li>
+               <li class="nav__item">
+                  <a onclick=scrollToEnvioCarta() class="nav__link">
+                     <span>02</span> Carta
+                  </a>
+               </li>
+            </ul>
+
+            <!-- Close button -->
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-line"></i>
+            </div>
+         </div>
+
+         <!-- Toggle button -->
+         <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-apps-2-line"></i>
+         </div>
+      </nav>
+   </header>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home">
+         <div class="home__container container" id="home">
+            <img src="assets/img/santa.png" alt="image" class="home__img">
+            <div class="home__data">
+               <div>
+                  <h1 class="home__title" id="title-data">
+                     Faltam
+                     <div class="home__number" id="number-data"></div>
+                     <div class="home__text" id="text-data">Dias</div>
+                     Para o Natal!!
+                  </h1>
+
+                  <h1 class="home__title" id="msg-christmas"></h1>
+               </div>
+               <p class="home__description">
+                  Compartilhe felicidade e espírito natalino
+                  com cartas de natal.
+               </p>
+
+               <button onclick=scrollToEnvioCarta() class="button">Envie uma Carta de Natal</button>
+            </div>
+            <img src="assets/img/bell.png" alt="" class="home__bell">
+            <img src="assets/img/star.png" alt="" class="home__star">
+
+            <div class="home__blob"></div>
+         </div>
+
+         <div class="carta__container container" id="carta-envio">
+            <h1 class="carta__title">Envie uma Carta</h1>
+            <form class="carta__form" onsubmit=sendEmail(event)>
+               <input class="nome" type="text" placeholder="Nome do Remetente" required>
+               <input class="email__remetente" type="email" placeholder="Email do Remetente" required>
+               <input class="email__destinatario" type="email" placeholder="Email do Destiantario" required>
+               <textarea class="msg" name="" id="" cols="30" rows="10" placeholder="Sua Mensagem de Natal" required></textarea>
+               <button type="submit">ENVIAR</button>
+            </form>
+         </div>
+
+      </section>
+   </main>
+
+   <!--=============== SWEETALERT ===============-->
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.1/dist/sweetalert2.all.min.js"></script>
+   
+   <!--=============== SNOW JS ===============-->
+   <!-- embed.im/snow/ -->
+   <script src="https://app.embed.im/snow.js" defer></script>
+
+   <!--=============== SMTP JS ===============-->
+   <!-- smtpjs.com, serviço de SMTP (Simple Mail Transfer Protocol) -->
+   <script src="https://smtpjs.com/v3/smtp.js" defer></script>
+   <script src="assets/js/smtp.js" defer></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
+</body>
+
+</html>
