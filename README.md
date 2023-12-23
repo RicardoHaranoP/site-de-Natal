@@ -11,4 +11,4 @@
 
 Inspirado por [Bedimcode](https://github.com/bedimcode/responsive-christmas-website-3)
 
-Exemplo de carta [Carta-de-Natal](exemploCarta.png)
+Exemplo de carta ![Carta-de-Natal](exemploCarta.png)
