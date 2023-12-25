@@ -4,7 +4,6 @@ const form = document.querySelector('.carta__form'),
     emailDestinatario = document.querySelector('.email__destinatario'),
     msg = document.querySelector('.msg')
 
-
 //  Alertas do SweetAlert
 const alert = (message) => {
     console.log(message)
@@ -32,7 +31,7 @@ const sendEmail = (e) => {
 
     Email.send({
         Host: "smtp.elasticemail.com",
-        Username: "ricardoharanopinto@gmail.com",
+        Username: emailRemetente.value,
         Password: "CD70A00D7832A0BF8EAE12EA8AE107729A7E",
         To: emailDestinatario.value,
         From: emailRemetente.value,
